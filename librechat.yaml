@@ -6,14 +6,12 @@ endpoints:
   custom:
     - name: "AgentRouter"
       apiKey: "${AGENTROUTER_API_KEY}"
-      baseURL: "https://co.agentrouter.org/v1"
+      baseURL: "https://api.openai.com/v1"
       models:
         default:
-          - "claude-opus-4-8"
-          - "claude-opus-5"
-          - "gpt-5.6-sol"
+          - "gpt-5.4-mini"
         fetch: false
       titleConvo: true
       titleMethod: "completion"
-      titleModel: "gpt-5.6-sol"
+      titleModel: "gpt-5.4-mini"
       modelDisplayLabel: "AgentRouter"
