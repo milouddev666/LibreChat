@@ -6,7 +6,7 @@ endpoints:
   custom:
     - name: "AgentRouter"
       apiKey: "${AGENTROUTER_API_KEY}"
-      baseURL: "https://agentrouter.org/v1"
+      baseURL: "https://co.agentrouter.org/v1"
       models:
         default:
           - "claude-opus-4-8"
