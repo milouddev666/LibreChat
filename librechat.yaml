@@ -15,3 +15,16 @@ endpoints:
       titleMethod: "completion"
       titleModel: "nemotron-3"
       modelDisplayLabel: "AgentRouter"
+
+    - name: "Gemini"
+      apiKey: "${GEMINI_API_KEY}"
+      baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/"
+      models:
+        default:
+          - "gemini-2.5-flash"
+          - "gemini-2.5-pro"
+        fetch: false
+      titleConvo: true
+      titleMethod: "completion"
+      titleModel: "gemini-2.5-flash"
+      modelDisplayLabel: "Gemini"
