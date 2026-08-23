@@ -10,6 +10,8 @@ endpoints:
       models:
         default:
           - "meta/llama-3.3-70b-instruct"
+          - "zai-org/GLM-5.2"
+          - "deepseek-ai/deepseek-v4-flash-0731"
         fetch: false
       titleConvo: true
       titleMethod: "completion"
