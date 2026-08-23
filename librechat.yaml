@@ -6,12 +6,12 @@ endpoints:
   custom:
     - name: "AgentRouter"
       apiKey: "${AGENTROUTER_API_KEY}"
-      baseURL: "https://api.openai.com/v1"
+      baseURL: "https://integrate.api.nvidia.com/v1"
       models:
         default:
-          - "gpt-5.4-mini"
+          - "meta/llama-3.3-70b-instruct"
         fetch: false
       titleConvo: true
       titleMethod: "completion"
-      titleModel: "gpt-5.4-mini"
+      titleModel: "meta/llama-3.3-70b-instruct"
       modelDisplayLabel: "AgentRouter"
