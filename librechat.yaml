@@ -9,12 +9,25 @@ endpoints:
       baseURL: "https://openrouter.ai/api/v1"
       models:
         default:
-          - "nvidia/nemotron-3-ultra-550b-a55b"
+          - "openrouter/free"
+          - "openai/gpt-oss-120b:free"
+          - "openai/gpt-oss-20b:free"
+          - "qwen/qwen3-coder:free"
+          - "qwen/qwen3-235b-a22b:free"
+          - "deepseek/deepseek-r1-0528:free"
+          - "deepseek/deepseek-chat-v3-0324:free"
+          - "meta-llama/llama-3.3-70b-instruct:free"
+          - "google/gemma-3-27b-it:free"
+          - "google/gemma-3-12b-it:free"
+          - "google/gemma-3-4b-it:free"
+          - "mistralai/mistral-small-3.1-24b-instruct:free"
+          - "moonshotai/kimi-k2:free"
+          - "nvidia/nemotron-nano-9b-v2:free"
         fetch: false
       titleConvo: true
       titleMethod: "completion"
-      titleModel: "nemotron-3"
-      modelDisplayLabel: "AgentRouter"
+      titleModel: "openai/gpt-oss-20b:free"
+      modelDisplayLabel: "OpenRouter Free"
 
     - name: "Gemini"
       apiKey: "${GEMINI_API_KEY}"
@@ -22,9 +35,18 @@ endpoints:
       models:
         default:
           - "gemini-2.5-flash"
-          - "gemini-2.5-pro"
         fetch: false
       titleConvo: true
       titleMethod: "completion"
       titleModel: "gemini-2.5-flash"
       modelDisplayLabel: "Gemini"
+
+    - name: "NanoBridge"
+      apiKey: "${NANOBRIDGE_API_KEY}"
+      baseURL: "https://api.nanobridge.net/v1"
+      models:
+        default: []
+        fetch: true
+      titleConvo: true
+      titleMethod: "completion"
+      modelDisplayLabel: "NanoBridge"
