@@ -45,8 +45,17 @@ endpoints:
       apiKey: "${NANOBRIDGE_API_KEY}"
       baseURL: "https://api.nanobridge.net/v1"
       models:
-        default: []
+        default:
+          - "deepseek-v4-flash"
+          - "deepseek-v4-pro-202606"
+          - "deepseek-v3.2"
+          - "glm-5.1"
+          - "glm-5.3"
+          - "minimax-m2.7"
+          - "minimax-m3"
+          - "kimi-k3"
         fetch: true
       titleConvo: true
       titleMethod: "completion"
+      titleModel: "deepseek-v4-flash"
       modelDisplayLabel: "NanoBridge"
